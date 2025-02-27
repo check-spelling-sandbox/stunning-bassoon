@@ -1,0 +1,13 @@
+name: NowSecure
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: NowSecure
+        uses: nowsecure/nowsecure-action@v4
