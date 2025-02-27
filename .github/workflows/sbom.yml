@@ -1,0 +1,15 @@
+name: Mobile SBOM
+
+on:
+  push:
+
+jobs:
+  sbom:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: NowSecure: Mobile SBOM
+        uses: nowsecure/nowsecure-sbom-action@v3
